@@ -1,0 +1,50 @@
+
+@import './Variables.module.scss';
+
+.header{
+  position: relative;
+  left: 6rem;
+  background-color: $light;
+  padding: 0 2rem;
+  border-bottom: 1px solid $gray;
+  max-width: 1400px;
+
+ 
+}
+
+.navbar{
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__text{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+
+  p{
+    color: #D6D9DE;
+
+    span{
+      color: #6D99F9;
+      font-weight: 500;
+    }
+  }
+}
+
+.navbar__title{
+  span{
+    font-weight: 500;
+    color: $color-text;
+  }
+}
+
+.navbar__icon{
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+

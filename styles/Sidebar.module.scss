@@ -1,0 +1,43 @@
+@import './Variables.module.scss';
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+    height: calc(100vh - 52px);
+    border-right: 1px solid $gray;
+}
+
+.sidebar__list {
+    margin: 0;
+    list-style: none;
+    padding: 1rem 2rem;
+
+
+    li {
+        cursor: pointer;
+        margin-bottom: 4rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $color-primary;
+
+        &:hover {
+            color: #DDA0EC;
+
+        }
+    }
+}
+
+
+.sidebar__icon {
+    color: $color-primary;
+
+}
+
+.active {
+    color: #DDA0EC;
+}
